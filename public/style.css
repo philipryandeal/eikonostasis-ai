@@ -151,6 +151,10 @@ section p {
   padding: 0.2em 0.6em;
   border-radius: 2px;
 }
+.tag-open {
+  color: var(--accent-lantern);
+  border-color: var(--accent-lantern);
+}
 
 .writings { border-top: 1px solid var(--border); }
 .writing-entry {
@@ -205,6 +209,32 @@ section p {
   margin-top: 0.35rem;
 }
 
+.teach {
+  border-top: 1px solid var(--border);
+  background: var(--bg-surface);
+}
+.teach h3 {
+  font-size: 1.25rem;
+  margin: 2rem 0 0.6rem;
+  color: var(--accent-lantern);
+}
+.teach p {
+  max-width: 620px;
+}
+
+.teach-close {
+  border-top: 1px solid var(--border);
+}
+.signed {
+  margin-top: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--text-primary) !important;
+}
+.back-home {
+  margin-top: 2rem;
+}
+
 .support { border-top: 1px solid var(--border); }
 .wallet-info {
   padding: 1.25rem;
@@ -246,6 +276,7 @@ footer p {
   .hero h1 { font-size: 2.3rem; }
   .hero { padding-top: 6rem; }
   .links-row { grid-template-columns: 1fr; }
+  .site-header nav { gap: 1.1rem; flex-wrap: wrap; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
