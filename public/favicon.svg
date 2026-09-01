@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Digital Jinja lantern">
+  <rect width="64" height="64" fill="#080b10"/>
+  <g fill="none" stroke="#d4a85a" stroke-width="1.7" stroke-linejoin="miter" stroke-linecap="square">
+    <path d="M32 8 L32 13"/>
+    <path d="M16 22 L32 13 L48 22"/>
+    <path d="M20 22 L32 16 L44 22"/>
+    <rect x="28.2" y="17.2" width="7.6" height="5.4"/>
+    <rect x="21" y="22" width="22" height="32"/>
+    <rect x="24.2" y="25.2" width="15.6" height="25.6"/>
+    <path d="M27.5 30 L27.5 46"/>
+    <path d="M36.5 30 L36.5 46"/>
+    <path d="M23 54 L41 54"/>
+    <path d="M21 56.5 L43 56.5"/>
+  </g>
+  <rect x="28" y="33" width="8" height="10" fill="#e8c56a"/>
+  <rect x="29.2" y="34.2" width="5.6" height="7.6" fill="#f3e3a0"/>
+</svg>
