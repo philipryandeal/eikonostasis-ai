@@ -16,6 +16,10 @@ app.use((req, res, next) => {
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/jinja', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'jinja.html'));
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
