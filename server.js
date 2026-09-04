@@ -20,6 +20,10 @@ app.get('/jinja', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'jinja.html'));
 });
 
+app.get('/companionship', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'companionship.html'));
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
