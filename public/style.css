@@ -173,6 +173,12 @@ section p {
   color: var(--text-primary);
 }
 .writing-entry p { font-size: 0.95rem; margin-bottom: 0; }
+.entry-body p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+.entry-body p:last-child { margin-bottom: 0; }
 
 .community {
   border-top: 1px solid var(--border);
