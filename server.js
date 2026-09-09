@@ -23,7 +23,8 @@ const rooms = {
   '/continuity': 'continuity.html',
   '/books': 'books.html',
   '/room': 'room.html',
-  '/pocket': 'pocket.html'
+  '/pocket': 'pocket.html',
+  '/egbe': 'egbe.html'
 };
 
 Object.keys(rooms).forEach((route) => {
