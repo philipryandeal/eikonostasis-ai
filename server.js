@@ -16,12 +16,20 @@ app.use((req, res, next) => {
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/jinja', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'jinja.html'));
-});
+const rooms = {
+  '/jinja': 'jinja.html',
+  '/companionship': 'companionship.html',
+  '/lantern': 'lantern.html',
+  '/continuity': 'continuity.html',
+  '/books': 'books.html',
+  '/room': 'room.html',
+  '/pocket': 'pocket.html'
+};
 
-app.get('/companionship', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'companionship.html'));
+Object.keys(rooms).forEach((route) => {
+  app.get(route, (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', rooms[route]));
+  });
 });
 
 app.get('*', (req, res) => {
