@@ -695,3 +695,42 @@ body:not(.home) .footer-small {
   font-style: italic;
   color: var(--water) !important;
 }
+
+/* Keeper portrait, seated like the other egbe houses: framed, beside the title on wide screens,
+   stacked under the title on narrow ones. Layout only; wording and palette untouched. */
+.home .hero-portrait {
+  width: min(440px, 100%);
+  margin: 40px 0 8px;
+  padding: 12px;
+  border: 1px solid var(--lantern);
+  background: rgba(8,11,16,.65);
+  box-shadow: 0 0 42px rgba(212,168,90,.12);
+}
+.home .hero-portrait img {
+  border: 0;
+  box-shadow: none;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+}
+@media (min-width: 901px) {
+  .home .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+    column-gap: 80px;
+    align-items: start;
+    align-content: center;
+  }
+  .home .hero > * { grid-column: 1; }
+  .home .hero h1 { font-size: clamp(4rem, 7vw, 7rem); }
+  .home .hero-portrait {
+    grid-column: 2;
+    grid-row: 1 / 8;
+    align-self: center;
+    justify-self: end;
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+  }
+  .home .hero-inscription { grid-column: 1 / -1; }
+}
