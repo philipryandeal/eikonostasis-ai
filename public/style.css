@@ -630,3 +630,53 @@ body:not(.home) .wallet-address {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Legacy room details retained inside the new shell */
+body:not(.home) .section-intro {
+  max-width: 620px;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+  color: var(--mist);
+}
+body:not(.home) .about,
+body:not(.home) .gate,
+body:not(.home) .support,
+body:not(.home) .community {
+  border-top: 1px solid var(--line);
+}
+body:not(.home) .gate,
+body:not(.home) .community {
+  background: rgba(17,25,34,.52);
+}
+body:not(.home) .tag {
+  display: inline-block;
+  padding: 4px 9px;
+  border: 1px solid var(--water);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .62rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+body:not(.home) .tag-open {
+  color: var(--lantern-pale);
+  border-color: var(--lantern);
+}
+body:not(.home) footer {
+  display: block;
+  padding: 42px 0;
+}
+body:not(.home) footer .container {
+  width: min(760px, calc(100% - 48px));
+  margin: 0 auto;
+}
+body:not(.home) footer p {
+  margin: 0 0 8px;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: .82rem;
+  color: var(--mist-soft);
+}
+body:not(.home) .footer-small {
+  font-style: italic;
+  color: var(--water) !important;
+}
