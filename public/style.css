@@ -1,16 +1,19 @@
+/* Cool iron, night water, and lantern light.
+   Original Jinja palette restored inside the house template. */
 :root {
-  --night: #0b1015;
-  --night-soft: #111922;
-  --slate: #1a2631;
-  --slate-light: #263746;
-  --paper: #e7edf1;
-  --mist: rgba(231,237,241,.68);
-  --mist-soft: rgba(231,237,241,.48);
-  --lantern: #caa35d;
-  --lantern-pale: #dfc58d;
-  --water: #6f9cab;
-  --line: rgba(202,163,93,.28);
-  --line-cool: rgba(127,155,179,.22);
+  --night: #080b10;
+  --night-soft: #10161d;
+  --slate: #181f28;
+  --slate-light: #24303b;
+  --paper: #e6edf3;
+  --mist: rgba(139,154,171,.82);
+  --mist-soft: rgba(139,154,171,.55);
+  --lantern: #d4a85a;
+  --lantern-pale: #e4c48a;
+  --water: #4a7d8a;
+  --iron: #7f9bb3;
+  --line: rgba(212,168,90,.28);
+  --line-cool: rgba(127,155,179,.28);
 }
 
 * { box-sizing: border-box; }
@@ -38,7 +41,7 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 50% 0%, rgba(202,163,93,.085), transparent 38%),
+    radial-gradient(circle at 50% 0%, rgba(212,168,90,.085), transparent 38%),
     radial-gradient(circle at 85% 55%, rgba(74,125,138,.055), transparent 32%);
 }
 
@@ -62,7 +65,7 @@ a:focus-visible { outline: 2px solid var(--lantern-pale); outline-offset: 5px; }
 .page-frame {
   position: fixed;
   inset: 14px;
-  border: 1px solid rgba(202,163,93,.22);
+  border: 1px solid rgba(212,168,90,.22);
   pointer-events: none;
   z-index: 99;
 }
@@ -76,9 +79,9 @@ a:focus-visible { outline: 2px solid var(--lantern-pale); outline-offset: 5px; }
   justify-content: space-between;
   gap: 28px;
   padding: 18px 36px;
-  background: rgba(11,16,21,.93);
+  background: rgba(8,11,16,.93);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(202,163,93,.18);
+  border-bottom: 1px solid rgba(212,168,90,.18);
 }
 
 .site-header nav {
@@ -96,7 +99,7 @@ a:focus-visible { outline: 2px solid var(--lantern-pale); outline-offset: 5px; }
   font-size: .7rem;
   letter-spacing: .13em;
   text-transform: uppercase;
-  color: rgba(231,237,241,.68);
+  color: rgba(230,237,243,.68);
 }
 .site-header nav a:hover,
 .nav-link:hover { color: var(--lantern-pale); }
@@ -233,7 +236,7 @@ h1, h2, h3 {
 }
 .button.primary { background: var(--lantern); color: var(--night); }
 .button.primary:hover { background: var(--lantern-pale); color: var(--night); }
-.button.secondary:hover { background: rgba(202,163,93,.09); }
+.button.secondary:hover { background: rgba(212,168,90,.09); }
 
 .hero-inscription {
   width: 100%;
@@ -245,9 +248,9 @@ h1, h2, h3 {
   font-family: "IBM Plex Mono", monospace;
   font-size: .58rem;
   letter-spacing: .15em;
-  color: rgba(231,237,241,.42);
+  color: rgba(230,237,243,.42);
 }
-.hero-inscription i { height: 1px; background: rgba(202,163,93,.2); }
+.hero-inscription i { height: 1px; background: rgba(212,168,90,.2); }
 
 .section-number {
   position: absolute;
@@ -255,7 +258,7 @@ h1, h2, h3 {
   right: 0;
   font-family: "IBM Plex Mono", monospace;
   font-size: .68rem;
-  color: rgba(223,197,141,.5);
+  color: rgba(228,196,138,.5);
 }
 
 .split-section {
@@ -304,11 +307,11 @@ blockquote p {
   min-height: 300px;
   padding: 28px;
   border: 1px solid rgba(127,155,179,.19);
-  background: rgba(26,38,49,.44);
+  background: rgba(24,31,40,.55);
 }
 .card.featured {
-  background: rgba(202,163,93,.075);
-  border-color: rgba(202,163,93,.42);
+  background: rgba(212,168,90,.075);
+  border-color: rgba(212,168,90,.42);
 }
 .link-card { text-decoration: none; transition: transform .2s ease, border-color .2s ease; }
 .link-card:hover { transform: translateY(-4px); border-color: var(--lantern); }
@@ -349,25 +352,25 @@ blockquote p {
   width: min(1250px, calc(100% - 36px));
   padding-left: 42px;
   padding-right: 42px;
-  background: #e4e9e9;
-  color: #141a1e;
+  background: #e6edf3;
+  color: #080b10;
 }
 .inverse-panel .eyebrow,
-.inverse-panel .lantern-code { color: #745b2c; }
-.inverse-panel .section-heading > p:last-child { color: rgba(20,26,30,.58); }
-.inverse-panel .section-number { color: rgba(20,26,30,.36); }
+.inverse-panel .lantern-code { color: #8a6430; }
+.inverse-panel .section-heading > p:last-child { color: rgba(8,11,16,.58); }
+.inverse-panel .section-number { color: rgba(8,11,16,.36); }
 
 .lantern-grid {
   display: grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
-  border-top: 1px solid rgba(20,26,30,.22);
-  border-left: 1px solid rgba(20,26,30,.22);
+  border-top: 1px solid rgba(8,11,16,.22);
+  border-left: 1px solid rgba(8,11,16,.22);
 }
 .lantern-item {
   min-height: 260px;
   padding: 28px;
-  border-right: 1px solid rgba(20,26,30,.22);
-  border-bottom: 1px solid rgba(20,26,30,.22);
+  border-right: 1px solid rgba(8,11,16,.22);
+  border-bottom: 1px solid rgba(8,11,16,.22);
 }
 .lantern-code {
   font-family: "IBM Plex Mono", monospace;
@@ -375,8 +378,8 @@ blockquote p {
   letter-spacing: .14em;
 }
 .lantern-item h3 { margin: 30px 0 12px; font-size: 1.55rem; }
-.lantern-item p { color: rgba(20,26,30,.67); }
-.lantern-item a { color: #6a5228; text-underline-offset: .2em; }
+.lantern-item p { color: rgba(8,11,16,.67); }
+.lantern-item a { color: #8a6430; text-underline-offset: .2em; }
 
 .archive-list {
   margin-top: 42px;
