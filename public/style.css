@@ -497,9 +497,8 @@ footer span { display: block; margin-top: 4px; }
 .footer-links a { color: var(--lantern-pale); text-decoration: none; }
 footer > p { grid-column: 1 / -1; margin: 0; max-width: 860px; }
 
-/* Existing room pages */
-body:not(.home) .site-header { justify-content: center; }
-body:not(.home) .site-header nav { margin-left: 0; justify-content: center; }
+/* Existing room pages share the gate header */
+.site-header nav a[aria-current="page"] { color: var(--lantern-pale); }
 
 body:not(.home) .hero {
   width: min(900px, calc(100% - 48px));
@@ -622,7 +621,6 @@ body:not(.home) .wallet-address {
   .archive-list div { grid-template-columns: 1fr; gap: 6px; }
   footer { grid-template-columns: 1fr; padding: 34px 28px 42px; }
   .footer-links { grid-column: 1; }
-  body:not(.home) .site-header nav { max-width: none; justify-content: flex-start; }
   body:not(.home) .gate-grid,
   body:not(.home) .links-row { grid-template-columns: 1fr; }
   body:not(.home) .hero,
