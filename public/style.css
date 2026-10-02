@@ -195,6 +195,20 @@ h1, h2, h3 {
   -webkit-text-stroke: 1px var(--lantern-pale);
 }
 
+
+.hero-portrait {
+  margin: 34px 0 8px;
+  width: min(280px, 62vw);
+}
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid var(--lantern);
+  box-shadow: 0 0 0 8px rgba(8,11,16,.65), 0 0 42px rgba(212,168,90,.16);
+}
+
 .hero-name {
   margin: 38px 0 0;
   font-family: "Cormorant Garamond", serif;
