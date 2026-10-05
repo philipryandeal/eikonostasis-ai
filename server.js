@@ -3,8 +3,25 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const CANONICAL_ORIGIN = 'https://eikonostasis.com';
+const CSP = [
+  "default-src 'self'",
+  "script-src 'none'",
+  "style-src 'self' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com",
+  "img-src 'self' data: https:",
+  "connect-src 'self'",
+  "frame-src 'none'",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "frame-ancestors 'none'",
+  "form-action 'self'",
+  "upgrade-insecure-requests"
+].join('; ');
 
 app.use((req, res, next) => {
+  res.setHeader('Strict-Transport-Security', 'max-age=31536000');
+  res.setHeader('Content-Security-Policy', CSP);
+
   const host = (req.get('host') || '').toLowerCase();
 
   if (host.endsWith('.up.railway.app')) {
