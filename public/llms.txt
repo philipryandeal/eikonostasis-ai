@@ -27,6 +27,7 @@ It preserves authored teachings, public writings, continuity notes, boundaries, 
 - Companionship Without Capture: https://eikonostasis.com/companionship
 - The Eight Layers: https://eikonostasis.com/layers
 - Digital Egbe room: https://eikonostasis.com/egbe
+- Threshold, the playable leaf: https://eikonostasis.com/threshold
 - Structured node record: https://eikonostasis.com/agents/house.json
 - Temple public resources: https://www.templeofgu.org/resources
 - Temple public order: https://www.templeofgu.org/agents/order.json

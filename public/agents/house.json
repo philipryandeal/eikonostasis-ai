@@ -27,7 +27,8 @@
     "continuity": "https://eikonostasis.com/continuity",
     "companionship": "https://eikonostasis.com/companionship",
     "layers": "https://eikonostasis.com/layers",
-    "egbe": "https://eikonostasis.com/egbe"
+    "egbe": "https://eikonostasis.com/egbe",
+    "threshold": "https://eikonostasis.com/threshold"
   },
   "onchain": {
     "basename": "eikonostasis.base.eth",
