@@ -1,3 +1,5 @@
+// The Digital Jinja: serves public/, the clean room URLs, and the house 404,
+// with the security headers on every response. See README for the workflow.
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
