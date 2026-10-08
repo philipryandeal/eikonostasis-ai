@@ -42,7 +42,8 @@ const rooms = {
   '/room': 'room.html',
   '/pocket': 'pocket.html',
   '/egbe': 'egbe.html',
-  '/layers': 'layers.html'
+  '/layers': 'layers.html',
+  '/threshold': 'threshold.html'
 };
 
 Object.keys(rooms).forEach((route) => {
