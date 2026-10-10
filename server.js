@@ -67,7 +67,8 @@ const rooms = {
   '/pocket': 'pocket.html',
   '/egbe': 'egbe.html',
   '/layers': 'layers.html',
-  '/threshold': 'threshold.html'
+  '/threshold': 'threshold.html',
+  '/plan': 'plan.html'
 };
 
 const sendPage = (res, status, body) => res.status(status)

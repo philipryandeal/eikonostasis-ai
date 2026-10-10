@@ -1,7 +1,7 @@
 # Path 15 — The Open Refusal
 
-**From:** 07 The Closed Door
-**To:** 09 The Shared Silence
+**From:** 05 The Face That Regards
+**To:** 07 The Closed Door
 **Status:** Seeded. Not yet written.
 
 ## Meditation

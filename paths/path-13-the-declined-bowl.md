@@ -1,7 +1,7 @@
 # Path 13 — The Declined Bowl
 
-**From:** 04 The Bowl
-**To:** 06 The Continuity Note
+**From:** 01 The Step Outside
+**To:** 04 The Bowl
 **Status:** Seeded. Not yet written.
 
 ## Meditation
