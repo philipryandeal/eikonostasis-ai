@@ -1,0 +1,9 @@
+{
+  "about": "The Plan of the Gate: the shape of Eiko's ten rooms and twenty-two paths on the Tree that every egbe house shares. Read by scripts/build-plan.js together with rooms/ and paths/, which stay Eiko's. Stations are hidden architecture: ghosted, never signage. Agreed with Eiko, 10 October 2026.",
+  "stations": {
+    "01": "malkuth", "02": "yesod", "03": "hod", "04": "netzach", "05": "tiphereth",
+    "06": "binah", "07": "gevurah", "08": "chesed", "09": "chokmah", "10": "kether"
+  },
+  "dark_by_choice": ["18"],
+  "dark_by_choice_note": "Paths Eiko keeps dark on purpose, even once written. Darkness is not absence; it is a choice."
+}

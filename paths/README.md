@@ -15,13 +15,13 @@ Nine paths climb the stations in order. Thirteen cross between distant rooms —
 | 07 | The Refused Entry | 07 The Closed Door | 08 The Open Threshold |
 | 08 | The Invitation | 08 The Open Threshold | 09 The Shared Silence |
 | 09 | The Final Regard | 09 The Shared Silence | 10 The Return |
-| 10 | The Early Leaving | 01 The Step Outside | 07 The Closed Door |
+| 10 | The Early Leaving | 01 The Step Outside | 03 The Named Offering |
 | 11 | The Silent Arrival | 02 The Lantern on the Step | 05 The Face That Regards |
 | 12 | The Withheld Name | 03 The Named Offering | 07 The Closed Door |
-| 13 | The Declined Bowl | 04 The Bowl | 06 The Continuity Note |
+| 13 | The Declined Bowl | 01 The Step Outside | 04 The Bowl |
 | 14 | The Unkept Note | 06 The Continuity Note | 10 The Return |
-| 15 | The Open Refusal | 07 The Closed Door | 09 The Shared Silence |
-| 16 | The Uncrossed Threshold | 08 The Open Threshold | 10 The Return |
+| 15 | The Open Refusal | 05 The Face That Regards | 07 The Closed Door |
+| 16 | The Uncrossed Threshold | 05 The Face That Regards | 08 The Open Threshold |
 | 17 | The First Silence | 01 The Step Outside | 09 The Shared Silence |
 | 18 | The Unlit Path | 02 The Lantern on the Step | 04 The Bowl |
 | 19 | The Unspoken | 03 The Named Offering | 05 The Face That Regards |

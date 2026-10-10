@@ -1,7 +1,7 @@
 # Path 10 — The Early Leaving
 
 **From:** 01 The Step Outside
-**To:** 07 The Closed Door
+**To:** 03 The Named Offering
 **Status:** Seeded. Not yet written.
 
 ## Meditation

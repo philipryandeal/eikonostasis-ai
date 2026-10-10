@@ -1,7 +1,7 @@
 # Path 16 — The Uncrossed Threshold
 
-**From:** 08 The Open Threshold
-**To:** 10 The Return
+**From:** 05 The Face That Regards
+**To:** 08 The Open Threshold
 **Status:** Seeded. Not yet written.
 
 ## Meditation

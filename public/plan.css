@@ -1,0 +1,47 @@
+/* The Plan of the Gate: quiet. Lanterns set on steps, thin walkable paths,
+   an open edge on every room. No inline styles, no scripts. */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.gate-sheet { margin: 6px 0 40px; padding: 18px 10px 10px; border: 1px solid var(--line-cool); background: radial-gradient(ellipse at 50% 12%, rgba(212,168,90,.06), transparent 55%), var(--night-soft); }
+.gate-map { display: block; width: 100%; height: auto; max-width: 620px; margin: 0 auto; }
+
+/* Paths: thin lines. Dark until written, unless kept dark by choice. */
+.way-line { stroke: var(--mist-soft); stroke-width: 1.2; opacity: .55; }
+.way.lit .way-line { stroke: var(--lantern); opacity: .9; stroke-width: 1.4; }
+.way-hit { stroke: transparent; stroke-width: 18; pointer-events: stroke; }
+.way:hover .way-line, .way:focus-visible .way-line { stroke: var(--lantern-pale); opacity: 1; stroke-width: 2.2; }
+
+/* Rooms: a lantern set on a step, inside an outline with one open edge.
+   The gap leads nowhere. It is only there. */
+.step .ground { fill: var(--night); }
+.step .edge { fill: none; stroke: var(--iron); stroke-width: 1.1; opacity: .75; stroke-dasharray: 84 16; stroke-dashoffset: -47; }
+.step .stone { fill: var(--slate-light); stroke: var(--line-cool); stroke-width: 1; }
+.step .lantern { fill: none; stroke: var(--mist); stroke-width: 1.1; stroke-linejoin: round; }
+.step .glow { fill: rgba(212,168,90,.0); }
+.step.lit .lantern { fill: rgba(212,168,90,.35); stroke: var(--lantern); }
+.step .flame { fill: none; stroke: var(--mist-soft); stroke-width: 1; }
+.step.lit .flame { fill: var(--lantern-pale); stroke: var(--lantern); }
+.step.lit .glow { fill: rgba(212,168,90,.16); }
+.step-name { font-family: "Cormorant Garamond", Georgia, serif; font-size: 16px; fill: var(--paper); text-anchor: middle; paint-order: stroke; stroke: var(--night-soft); stroke-width: 4px; stroke-linejoin: round; }
+/* The stations are hidden architecture: a ghost beneath the name. */
+.ghost { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 13px; letter-spacing: .14em; fill: var(--iron); opacity: .16; text-anchor: middle; pointer-events: none; }
+.step:hover .edge, .step:focus-visible .edge { stroke: var(--lantern-pale); opacity: 1; }
+.step:hover .lantern, .step:focus-visible .lantern { stroke: var(--lantern-pale); }
+.gate-map a:focus-visible { outline: none; }
+
+/* The entries beneath the map. No numbers: no order is required. */
+.plan h2 { margin-top: 50px; }
+.plan-entries { list-style: none; margin: 0 0 1.4em; padding: 0; border-top: 1px solid var(--line-cool); }
+.plan-entry { padding: 22px 0 16px; border-bottom: 1px solid var(--line-cool); scroll-margin-top: 110px; }
+.plan-entry h3 { margin: 0 0 6px; }
+.entry-theme { color: var(--mist); font-style: italic; margin-bottom: 10px; }
+.entry-seed { margin-bottom: 10px; }
+.entry-ways, .entry-crossing { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .8rem; color: var(--mist); }
+.entry-ways span { letter-spacing: .14em; text-transform: uppercase; color: var(--lantern); margin-right: 8px; }
+.entry-dark { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .76rem; letter-spacing: .04em; color: var(--mist-soft); margin: 0; }
+.plan-entry:target { border-left: 2px solid var(--lantern); padding-left: 18px; background: linear-gradient(90deg, rgba(212,168,90,.07), transparent 70%); }
+.plan-law { margin-top: 36px; color: var(--mist); }
+
+@media (max-width: 700px) {
+  .gate-sheet { padding: 8px 2px; margin-left: -6px; margin-right: -6px; }
+}

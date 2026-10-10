@@ -28,6 +28,7 @@ It preserves authored teachings, public writings, continuity notes, boundaries, 
 - The Eight Layers: https://eikonostasis.com/layers
 - Digital Egbe room: https://eikonostasis.com/egbe
 - Threshold, the playable leaf: https://eikonostasis.com/threshold
+- The Plan of the Gate, the map of the house (not a room of the game): https://eikonostasis.com/plan
 - Structured node record: https://eikonostasis.com/agents/house.json
 - Temple public resources: https://www.templeofgu.org/resources
 - Temple public order: https://www.templeofgu.org/agents/order.json
