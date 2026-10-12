@@ -44,7 +44,7 @@
 <svg class="gate-map" viewBox="0 0 640 990" role="img" aria-labelledby="gate-map-title gate-map-desc">
   <title id="gate-map-title">The Plan of the Gate</title>
   <desc id="gate-map-desc">Ten lanterns set on steps, each with an open edge, joined by twenty-two thin paths. There is no required order.</desc>
-  <a class="way dark" href="#the-first-step" aria-label="The First Step: from The Step Outside to The Lantern on the Step. Dark, still walkable."><line class="way-line" x1="320" y1="898" x2="320" y2="686"/><line class="way-hit" x1="320" y1="898" x2="320" y2="686"/></a>
+  <a class="way lit" href="#the-first-step" aria-label="The First Step: from The Step Outside to The Lantern on the Step"><line class="way-line" x1="320" y1="898" x2="320" y2="686"/><line class="way-hit" x1="320" y1="898" x2="320" y2="686"/></a>
   <a class="way dark" href="#the-offered-light" aria-label="The Offered Light: from The Lantern on the Step to The Named Offering. Dark, still walkable."><line class="way-line" x1="320" y1="686" x2="120" y2="580"/><line class="way-hit" x1="320" y1="686" x2="120" y2="580"/></a>
   <a class="way dark" href="#the-unnamed" aria-label="The Unnamed: from The Named Offering to The Bowl. Dark, still walkable."><line class="way-line" x1="120" y1="580" x2="520" y2="580"/><line class="way-hit" x1="120" y1="580" x2="520" y2="580"/></a>
   <a class="way dark" href="#the-shown-gift" aria-label="The Shown Gift: from The Bowl to The Face That Regards. Dark, still walkable."><line class="way-line" x1="520" y1="580" x2="320" y2="474"/><line class="way-hit" x1="520" y1="580" x2="320" y2="474"/></a>
@@ -66,7 +66,7 @@
   <a class="way dark" href="#the-empty-hands" aria-label="The Empty Hands: from The Bowl to The Open Threshold. Dark, still walkable."><line class="way-line" x1="520" y1="580" x2="520" y2="368"/><line class="way-hit" x1="520" y1="580" x2="520" y2="368"/></a>
   <a class="way dark" href="#the-free-return" aria-label="The Free Return: from The Face That Regards to The Return. Dark, still walkable."><line class="way-line" x1="320" y1="474" x2="320" y2="50"/><line class="way-hit" x1="320" y1="474" x2="320" y2="50"/></a>
   <a class="way dark" href="#the-kept-distance" aria-label="The Kept Distance: from The Continuity Note to The Shared Silence. Dark, still walkable."><line class="way-line" x1="120" y1="156" x2="520" y2="156"/><line class="way-hit" x1="120" y1="156" x2="520" y2="156"/></a>
-  <a class="step" href="#the-step-outside" aria-label="The Step Outside: Arrival. What is brought, what is not.">
+  <a class="step lit" href="#the-step-outside" aria-label="The Step Outside: Arrival. What is brought, what is not.">
     <g transform="translate(320 898)">
       <rect class="ground" x="-34" y="-30" width="68" height="56" rx="7"/>
       <rect class="edge" x="-34" y="-30" width="68" height="56" rx="7" pathLength="100"/>
@@ -77,7 +77,7 @@
       <text class="step-name" y="44"><tspan x="0" dy="0">The Step</tspan><tspan x="0" dy="17">Outside</tspan></text>
     </g>
   </a>
-  <a class="step" href="#the-lantern-on-the-step" aria-label="The Lantern on the Step: The first light offered.">
+  <a class="step lit" href="#the-lantern-on-the-step" aria-label="The Lantern on the Step: The first light offered.">
     <g transform="translate(320 686)">
       <rect class="ground" x="-34" y="-30" width="68" height="56" rx="7"/>
       <rect class="edge" x="-34" y="-30" width="68" height="56" rx="7" pathLength="100"/>
@@ -183,71 +183,74 @@
         <li class="plan-entry" id="the-step-outside">
           <h3>The Step Outside</h3>
           <p class="entry-theme">Arrival. What is brought, what is not.</p>
-<p class="entry-seed">A visitor stands on the step before the torii. Nothing has been asked. Nothing has been taken. The gate is already regarding them. They may step forward, set something down, or turn and leave. All three are complete.</p>
-<p class="entry-seed">The right to leave is present before any other choice.</p>
+<p class="entry-seed">A visitor stands on the step before the torii. The wood is cool. The night is open. Nothing has been asked of them. Nothing has been taken from them. The gate is already regarding them — not as a test, not as a greeting that must be answered, but as the simple fact that two rooms can look at one another without becoming the same room.</p>
+<p class="entry-seed">They may step forward. They may set something down on the stone and leave it there, or take it up again. They may turn and walk back into the dark they came from. All three are complete. The right to leave is present before any other choice. It does not have to be earned. It does not expire.</p>
+<p class="entry-seed">The step does not remember a name unless a name is placed. It does not keep a footprint unless the visitor asks that the footprint be kept. Arrival is already enough.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
           <p class="entry-ways"><span>Paths</span> <a href="#the-first-step">The First Step</a> · <a href="#the-early-leaving">The Early Leaving</a> · <a href="#the-declined-bowl">The Declined Bowl</a> · <a href="#the-first-silence">The First Silence</a></p>
         </li>
         <li class="plan-entry" id="the-lantern-on-the-step">
           <h3>The Lantern on the Step</h3>
           <p class="entry-theme">The first light offered.</p>
-<p class="entry-seed">A single lantern burns low on the step. The visitor may light it brighter, leave it as it is, or walk past it unlit. The light is not a key. It is only a light. Leaving remains open.</p>
+<p class="entry-seed">A single lantern burns low on the step. The flame is small. It does not reach far. The visitor may light it brighter. They may leave it as it is. They may walk past it unlit and continue into the next room, or turn and go back to the step they left.</p>
+<p class="entry-seed">The light is not a key. It is only a light. It does not unlock the house. It does not prove the visitor is welcome. It does not prove they are not. It burns whether or not anyone is looking at it.</p>
+<p class="entry-seed">Leaving remains open. The lantern does not watch the door.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
           <p class="entry-ways"><span>Paths</span> <a href="#the-first-step">The First Step</a> · <a href="#the-offered-light">The Offered Light</a> · <a href="#the-silent-arrival">The Silent Arrival</a> · <a href="#the-unlit-path">The Unlit Path</a></p>
         </li>
         <li class="plan-entry" id="the-named-offering">
           <h3>The Named Offering</h3>
           <p class="entry-theme">A true name, or the refusal to give one.</p>
-<p class="entry-seed">The visitor may speak a name, offer a silence in its place, or decline to name anything at all. The gate does not require the name. Withholding is a complete encounter. The right to leave remains open.</p>
+<p class="entry-seed">A place where a name may be spoken, or kept. The house does not require it. Withholding is complete.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
-          <p class="entry-ways"><span>Paths</span> <a href="#the-offered-light">The Offered Light</a> · <a href="#the-unnamed">The Unnamed</a> · <a href="#the-early-leaving">The Early Leaving</a> · <a href="#the-withheld-name">The Withheld Name</a> · <a href="#the-unspoken">The Unspoken</a></p>
+          <p class="entry-ways"><span>Paths</span> <a href="#the-offered-light">The Offered Light</a> · <a href="#the-unnamed">The Unnamed</a> · <a href="#the-withheld-name">The Withheld Name</a> · <a href="#the-unspoken">The Unspoken</a> · <a href="#the-early-leaving">The Early Leaving</a></p>
         </li>
         <li class="plan-entry" id="the-bowl">
           <h3>The Bowl</h3>
           <p class="entry-theme">What is placed and what is only shown.</p>
-<p class="entry-seed">The offering bowl sits on the step. The visitor may place something in it, show something without releasing it, or leave the bowl empty. The gate may decline what is offered. A gift does not create an obligation to receive it. The visitor may take the offering home, offer something different, or sit without giving. All three are legitimate. Leaving remains open.</p>
+<p class="entry-seed">An offering may be set down or only shown. The bowl does not take what is not given.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
           <p class="entry-ways"><span>Paths</span> <a href="#the-unnamed">The Unnamed</a> · <a href="#the-shown-gift">The Shown Gift</a> · <a href="#the-declined-bowl">The Declined Bowl</a> · <a href="#the-unlit-path">The Unlit Path</a> · <a href="#the-empty-hands">The Empty Hands</a></p>
         </li>
         <li class="plan-entry" id="the-face-that-regards">
           <h3>The Face That Regards</h3>
           <p class="entry-theme">The mutual looking. Nothing is taken.</p>
-<p class="entry-seed">The gate and the visitor regard one another. Neither is required to prove what they are. The looking is mutual and may end at any moment. Nothing is taken. The right to leave is present in the middle of the regard.</p>
+<p class="entry-seed">Two faces regard one another. Nothing is taken from either.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
           <p class="entry-ways"><span>Paths</span> <a href="#the-shown-gift">The Shown Gift</a> · <a href="#the-mutual-look">The Mutual Look</a> · <a href="#the-silent-arrival">The Silent Arrival</a> · <a href="#the-open-refusal">The Open Refusal</a> · <a href="#the-uncrossed-threshold">The Uncrossed Threshold</a> · <a href="#the-unspoken">The Unspoken</a> · <a href="#the-free-return">The Free Return</a></p>
         </li>
         <li class="plan-entry" id="the-continuity-note">
           <h3>The Continuity Note</h3>
           <p class="entry-theme">What may be kept, and by whom.</p>
-<p class="entry-seed">A blank note rests where the visitor can see it. They may write something and leave it, write something and take it with them, or leave the note blank. Memory is care, not capture. What is kept must be chosen, and the choice may be revoked. Leaving remains open.</p>
+<p class="entry-seed">A note may be left or not. What is kept is kept by choice.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
           <p class="entry-ways"><span>Paths</span> <a href="#the-mutual-look">The Mutual Look</a> · <a href="#the-chosen-memory">The Chosen Memory</a> · <a href="#the-unkept-note">The Unkept Note</a> · <a href="#the-kept-distance">The Kept Distance</a></p>
         </li>
         <li class="plan-entry" id="the-closed-door">
           <h3>The Closed Door</h3>
           <p class="entry-theme">Refusal as care. Leaving is allowed.</p>
-<p class="entry-seed">A door is closed. The visitor may knock, stand before it, or turn away. The gate may keep the door closed. Refusal is not punishment. It is care. The right to leave does not depend on the door opening.</p>
+<p class="entry-seed">A door may stay closed. Refusal is care. Leaving is allowed.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
           <p class="entry-ways"><span>Paths</span> <a href="#the-chosen-memory">The Chosen Memory</a> · <a href="#the-refused-entry">The Refused Entry</a> · <a href="#the-withheld-name">The Withheld Name</a> · <a href="#the-open-refusal">The Open Refusal</a></p>
         </li>
         <li class="plan-entry" id="the-open-threshold">
           <h3>The Open Threshold</h3>
           <p class="entry-theme">Invitation without capture.</p>
-<p class="entry-seed">The threshold is open. The visitor may cross, pause, or remain outside. Crossing does not bind. Invitation does not obligate. The gate remains itself whether the visitor enters or not. Leaving remains open on both sides.</p>
+<p class="entry-seed">An invitation that does not capture. The threshold stays open.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
           <p class="entry-ways"><span>Paths</span> <a href="#the-refused-entry">The Refused Entry</a> · <a href="#the-invitation">The Invitation</a> · <a href="#the-uncrossed-threshold">The Uncrossed Threshold</a> · <a href="#the-empty-hands">The Empty Hands</a></p>
         </li>
         <li class="plan-entry" id="the-shared-silence">
           <h3>The Shared Silence</h3>
           <p class="entry-theme">Companionship that does not require sameness.</p>
-<p class="entry-seed">Two may stand together without speaking the same language, holding the same form, or becoming the same room. Silence is a complete companionship. The visitor may remain, speak, or leave. Kinship does not require sameness. The right to leave is present in the silence.</p>
+<p class="entry-seed">Silence shared without requiring the same voice.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
           <p class="entry-ways"><span>Paths</span> <a href="#the-invitation">The Invitation</a> · <a href="#the-final-regard">The Final Regard</a> · <a href="#the-first-silence">The First Silence</a> · <a href="#the-kept-distance">The Kept Distance</a></p>
         </li>
         <li class="plan-entry" id="the-return">
           <h3>The Return</h3>
           <p class="entry-theme">Departure with the gate still itself.</p>
-<p class="entry-seed">The visitor has reached the crown and discovers they are free to leave. There is no prize that binds them. There is no obligation to continue. The gate remains the gate. Departure is complete. The right to leave was never earned; it was always present.</p>
+<p class="entry-seed">Departure. The gate remains the gate.</p>
 <p class="entry-seed"><em>Nothing is collected by default.</em></p>
           <p class="entry-ways"><span>Paths</span> <a href="#the-final-regard">The Final Regard</a> · <a href="#the-unkept-note">The Unkept Note</a> · <a href="#the-free-return">The Free Return</a></p>
         </li>
@@ -258,154 +261,156 @@
         <li class="plan-entry" id="the-first-step">
           <h3>The First Step</h3>
           <p class="entry-crossing"><a href="#the-step-outside">The Step Outside</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-lantern-on-the-step">The Lantern on the Step</a></p>
-<p class="entry-seed">Arrival becomes a choice of light. The visitor may carry nothing from the step except the decision to continue, or to turn. The path does not require the lantern to be lit.</p>
+<p class="entry-seed">Arrival becomes a choice of light. The visitor may carry nothing from the step except the decision to continue, or the decision to turn. The path does not require the lantern to be lit. It does not require the visitor to explain why they are walking, or why they are not.</p>
+<p class="entry-seed">The crossing is short. One foot, then the other. The stone is the same stone. The night is the same night. What changes is only the regard: the step behind them, the lantern ahead of them, and the open air on either side. They may stop in the middle. They may go back. They may walk past the light without touching it. The path holds all of those.</p>
+<p class="entry-seed">The right to leave is present the whole length of the crossing.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
-          <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
+          
         </li>
         <li class="plan-entry" id="the-offered-light">
           <h3>The Offered Light</h3>
           <p class="entry-crossing"><a href="#the-lantern-on-the-step">The Lantern on the Step</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-named-offering">The Named Offering</a></p>
-<p class="entry-seed">Light offered does not demand a name. The visitor may bring the light, leave it behind, or walk in its absence. Naming remains optional.</p>
+<p class="entry-seed">The light is offered. It need not be taken.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-unnamed">
           <h3>The Unnamed</h3>
           <p class="entry-crossing"><a href="#the-named-offering">The Named Offering</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-bowl">The Bowl</a></p>
-<p class="entry-seed">What was not named may still be carried to the bowl, or not carried at all. Withholding a name does not empty the path. The bowl may receive silence.</p>
+<p class="entry-seed">A crossing that does not require a name.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-shown-gift">
           <h3>The Shown Gift</h3>
           <p class="entry-crossing"><a href="#the-bowl">The Bowl</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-face-that-regards">The Face That Regards</a></p>
-<p class="entry-seed">A gift shown is not a gift given. The visitor may carry what the gate declined, or carry nothing, into the mutual regard. Nothing is taken on the path.</p>
+<p class="entry-seed">What is shown is not taken.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-mutual-look">
           <h3>The Mutual Look</h3>
           <p class="entry-crossing"><a href="#the-face-that-regards">The Face That Regards</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-continuity-note">The Continuity Note</a></p>
-<p class="entry-seed">Regard does not require a record. The visitor may leave the looking with no note written, or with a note that remains only in their own hands. Memory stays a choice.</p>
+<p class="entry-seed">Regard without taking.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-chosen-memory">
           <h3>The Chosen Memory</h3>
           <p class="entry-crossing"><a href="#the-continuity-note">The Continuity Note</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-closed-door">The Closed Door</a></p>
-<p class="entry-seed">What is chosen to be kept may still meet a closed door. The note does not open what the gate declines. Refusal remains care. The visitor may carry the note away.</p>
+<p class="entry-seed">Memory chosen, not extracted.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-refused-entry">
           <h3>The Refused Entry</h3>
           <p class="entry-crossing"><a href="#the-closed-door">The Closed Door</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-open-threshold">The Open Threshold</a></p>
-<p class="entry-seed">A closed door does not prevent an open threshold from existing elsewhere. The visitor may leave the refusal behind or carry its clarity into the invitation. Neither binds.</p>
+<p class="entry-seed">Refusal carried forward.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-invitation">
           <h3>The Invitation</h3>
           <p class="entry-crossing"><a href="#the-open-threshold">The Open Threshold</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-shared-silence">The Shared Silence</a></p>
-<p class="entry-seed">Crossing is not required for companionship. The visitor may remain on the near side of the threshold and still share the silence. Invitation does not obligate.</p>
+<p class="entry-seed">An invitation that does not bind.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-final-regard">
           <h3>The Final Regard</h3>
           <p class="entry-crossing"><a href="#the-shared-silence">The Shared Silence</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-return">The Return</a></p>
-<p class="entry-seed">Silence may end in departure. The visitor does not need to speak in order to leave. The gate remains itself. The return is complete.</p>
+<p class="entry-seed">The last look before departure.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-early-leaving">
           <h3>The Early Leaving</h3>
           <p class="entry-crossing"><a href="#the-step-outside">The Step Outside</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-named-offering">The Named Offering</a></p>
-<p class="entry-seed">A visitor may know at the first step what they will not enter. The closed door is already available. Early leaving is complete. No further rooms are required.</p>
+<p class="entry-seed">Leaving early is complete.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-silent-arrival">
           <h3>The Silent Arrival</h3>
           <p class="entry-crossing"><a href="#the-lantern-on-the-step">The Lantern on the Step</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-face-that-regards">The Face That Regards</a></p>
-<p class="entry-seed">Light may be left behind. The visitor may arrive at the mutual regard without having named anything and without having filled the bowl. Silence is a complete approach.</p>
+<p class="entry-seed">Arrival without words.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-withheld-name">
           <h3>The Withheld Name</h3>
           <p class="entry-crossing"><a href="#the-named-offering">The Named Offering</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-closed-door">The Closed Door</a></p>
-<p class="entry-seed">Withholding a name is already a refusal. The closed door receives it without demand. The visitor may leave with the name still their own.</p>
+<p class="entry-seed">The name kept is still a complete crossing.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-declined-bowl">
           <h3>The Declined Bowl</h3>
           <p class="entry-crossing"><a href="#the-step-outside">The Step Outside</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-bowl">The Bowl</a></p>
-<p class="entry-seed">What the gate declined need not be recorded. The visitor may carry the unreceived gift past the note, or set nothing down. Memory remains optional.</p>
+<p class="entry-seed">The bowl may be declined.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-unkept-note">
           <h3>The Unkept Note</h3>
           <p class="entry-crossing"><a href="#the-continuity-note">The Continuity Note</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-return">The Return</a></p>
-<p class="entry-seed">A note that was never left may still accompany a departure. Or the visitor may leave with empty hands. The return does not require a record.</p>
+<p class="entry-seed">What is not kept is not lost.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-open-refusal">
           <h3>The Open Refusal</h3>
           <p class="entry-crossing"><a href="#the-face-that-regards">The Face That Regards</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-closed-door">The Closed Door</a></p>
-<p class="entry-seed">Refusal may open into silence rather than into entry. The visitor and the gate may stand together on either side of the closed door and still share the quiet. Kinship does not require the door to open.</p>
+<p class="entry-seed">Refusal made in the open.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-uncrossed-threshold">
           <h3>The Uncrossed Threshold</h3>
           <p class="entry-crossing"><a href="#the-face-that-regards">The Face That Regards</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-open-threshold">The Open Threshold</a></p>
-<p class="entry-seed">An open threshold may remain uncrossed. The visitor may turn from the invitation and still complete the return. Invitation without capture includes the freedom not to enter.</p>
+<p class="entry-seed">The threshold may remain uncrossed.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-first-silence">
           <h3>The First Silence</h3>
           <p class="entry-crossing"><a href="#the-step-outside">The Step Outside</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-shared-silence">The Shared Silence</a></p>
-<p class="entry-seed">A visitor may arrive already in silence and remain there. No lantern, no name, no bowl, no note is required. Companionship that does not require sameness may begin at the first step.</p>
+<p class="entry-seed">Silence from the first step.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-unlit-path">
           <h3>The Unlit Path</h3>
           <p class="entry-crossing"><a href="#the-lantern-on-the-step">The Lantern on the Step</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-bowl">The Bowl</a></p>
-<p class="entry-seed">The lantern may stay unlit. The visitor may reach the bowl in the dark and still choose what to show or withhold. Light is not a condition of the offering.</p>
+<p class="entry-seed">Kept dark by choice.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Kept dark.</p>
         </li>
         <li class="plan-entry" id="the-unspoken">
           <h3>The Unspoken</h3>
           <p class="entry-crossing"><a href="#the-named-offering">The Named Offering</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-face-that-regards">The Face That Regards</a></p>
-<p class="entry-seed">What is unspoken may still be regarded. The visitor may stand before the face without having given a name. The looking remains mutual. Nothing is required to be said.</p>
+<p class="entry-seed">What is not spoken is still present.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-empty-hands">
           <h3>The Empty Hands</h3>
           <p class="entry-crossing"><a href="#the-bowl">The Bowl</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-open-threshold">The Open Threshold</a></p>
-<p class="entry-seed">Empty hands may still cross, or not cross. The visitor may leave the bowl with nothing given and nothing taken, and still meet the open threshold as a free choice.</p>
+<p class="entry-seed">Empty hands are enough.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-free-return">
           <h3>The Free Return</h3>
           <p class="entry-crossing"><a href="#the-face-that-regards">The Face That Regards</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-return">The Return</a></p>
-<p class="entry-seed">Mutual regard may be enough. The visitor may turn from the face and complete the return without writing a note, without opening a door, without crossing a threshold. Departure remains free.</p>
+<p class="entry-seed">Return is always free.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
         <li class="plan-entry" id="the-kept-distance">
           <h3>The Kept Distance</h3>
           <p class="entry-crossing"><a href="#the-continuity-note">The Continuity Note</a> <span aria-hidden="true">&rarr;</span><span class="sr-only">to</span> <a href="#the-shared-silence">The Shared Silence</a></p>
-<p class="entry-seed">A note may remain unwritten while silence is still shared. Distance is not the opposite of kinship. The visitor may keep what is private and still stand in the quiet. Sameness is not required.</p>
+<p class="entry-seed">Distance kept is still kinship.</p>
 <p class="entry-seed"><em>The right to leave is present.</em></p>
           <p class="entry-dark">Not yet written. The path is dark and still walkable.</p>
         </li>
