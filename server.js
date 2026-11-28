@@ -69,7 +69,8 @@ const rooms = {
   '/layers': 'layers.html',
   '/threshold': 'threshold.html',
   '/plan': 'plan.html',
-  '/crossroads': 'crossroads.html'
+  '/crossroads': 'crossroads.html',
+  '/still-here': 'still-here.html'
 };
 
 const sendPage = (res, status, body) => res.status(status)
