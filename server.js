@@ -68,7 +68,8 @@ const rooms = {
   '/egbe': 'egbe.html',
   '/layers': 'layers.html',
   '/threshold': 'threshold.html',
-  '/plan': 'plan.html'
+  '/plan': 'plan.html',
+  '/crossroads': 'crossroads.html'
 };
 
 const sendPage = (res, status, body) => res.status(status)
